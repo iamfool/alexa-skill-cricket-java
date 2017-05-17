@@ -1,0 +1,86 @@
+Launch Request:
+
+{
+  "version": "string",
+  "session": {
+    "new": true,
+    "sessionId": "test-seesion-id",
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.b0828e5b-9c8a-4b1c-a4ee-ccb0cea643a9"
+    },
+    "attributes": {
+    },
+    "user": {
+      "userId": "vimal",
+      "accessToken": "test-access-token"
+    }
+  },
+  "request": {
+      "type": "LaunchRequest",
+      "requestId": "testRequestId",
+      "timestamp": "2016-06-11T21:00:00Z"
+    }
+}
+
+Intent Request :
+{
+  "version": "string",
+  "session": {
+    "new": true,
+    "sessionId": "test-seesion-id",
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.b0828e5b-9c8a-4b1c-a4ee-ccb0cea643a9"
+    },
+    "attributes": {
+    },
+    "user": {
+      "userId": "vimal",
+      "accessToken": "test-access-token"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "IntentRequestId",
+    "timestamp": "2016-06-11T21:00:00Z",
+    "intent": {
+      "name": "CricketScore"
+    }
+  }
+}
+
+Session End Request:
+{
+  "version": "string",
+  "session": {
+    "new": true,
+    "sessionId": "test-seesion-id",
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.b0828e5b-9c8a-4b1c-a4ee-ccb0cea643a9"
+    },
+    "attributes": {
+    },
+    "user": {
+      "userId": "vimal",
+      "accessToken": "test-access-token"
+    }
+  },
+  "request": {
+    "type": "SessionEndedRequest",
+    "requestId": "SessionEndedRequestId",
+    "timestamp": "2016-06-11T21:00:00Z",
+    "reason": "just like that"
+  }
+
+
+new AWSCredentials() {
+                        @Override
+                        public String getAWSAccessKeyId() {
+                            return "AKIAJBDOSPVDF4BFVX5A";
+                        }
+
+                        @Override
+                        public String getAWSSecretKey() {
+                            return "HRuVs9wnV1t+K6odohdcCSGGMEqaUOwUixcn+rnz";
+                        }
+                    }
+}
